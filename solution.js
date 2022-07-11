@@ -57,21 +57,20 @@ switch (fruit) {
 }
 
 //
-let percentageComplete = "25";
-switch (percentageComplete) {
-    case "<30":
+let percentageComplete = "100";
+if (percentageComplete < 30) {
         console.log("QQ4: Still a long way to go");
-        break;
-    case ">=30 && <=50":
+        
+}    else if (percentageComplete <= 50) {
         console.log("Q4: Slowly getting there");
-        break;    
-    case ">50 && <= 80":
+          
+}   else if (percentageComplete <= 80){
         console.log("Q4: You can do it!");
-        break;
-    case ">=81 && <=99":
+        
+}   else if (percentageComplete < 100) {
         console.log("Q4: This is the last push!");
-        break; 
-    default:
+        
+}   else {
         console.log("Q4: You're there. Well done!");
 }
 
